@@ -5,7 +5,6 @@ const productSchema = mongoose.Schema({
         type : String,
         required: true
     },
-
     images:[{
         type : String,
     }],
@@ -21,7 +20,6 @@ const productSchema = mongoose.Schema({
         type : String,
         required: true
     }],
-
     rating:{
         type : Number,
         required: true,
@@ -40,6 +38,5 @@ const productSchema = mongoose.Schema({
 }, {
     timestamps: true,
 },)
-
 module.exports = mongoose.model("product", productSchema);
 export default product 
